@@ -59,7 +59,7 @@ const InputProduct = (props) => {
       //
       if (!isDefaultImg) {
         //
-        setImg("서버 주소" + product.img_path);
+        setImg("http://3.34.144.225" + product.img_path);
       }
     }
   }, [products]);
