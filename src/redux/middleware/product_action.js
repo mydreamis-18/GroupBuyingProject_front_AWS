@@ -6,15 +6,9 @@ export const getAllProducts_action = () => {
   //
   return async (_dispatch, getState) => {
     //
-    const headers = {
-      "Content-type": "application/x-www-form-urlencoded; charset=UTF-8",
-      Accept: "*/*",
-    };
     const _getAllProducts_action = await axios({
       //
       url: "http://3.34.144.225/getAllProducts",
-      responseEncoding: "utf8",
-      headers: headers,
       method: "post",
     });
     const products = _getAllProducts_action.data;
