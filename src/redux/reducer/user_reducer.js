@@ -34,7 +34,6 @@ function reducer(state = init, action) {
         //
         state.isAdmin = true;
       }
-      console.log(state);
       return { ...state, isLogin: true, userNum: payload.userNum, nickname: payload.nickname };
     //
     //////////////
