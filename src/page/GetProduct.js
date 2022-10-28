@@ -70,7 +70,7 @@ const GetProduct = () => {
     <div style={{ border: "1px solid black", margin: "0 10vw", padding: "2vw" }}>
       {isProduct ? (
         <>
-          <img src={isDefaultImg ? require("../img/default.PNG") : "http://3.34.144.225" + decodeURI(product.img_path)} alt="이미지" />
+          <img src={isDefaultImg ? require("../img/default.PNG") : "http://3.34.144.225" + decodeURIComponent(product.img_path)} alt="이미지" />
           <LeftP>상품명: {product.name}</LeftP>
           <LeftP>상품 설명: {product.content}</LeftP>
           <LeftP>{DDay}</LeftP>
