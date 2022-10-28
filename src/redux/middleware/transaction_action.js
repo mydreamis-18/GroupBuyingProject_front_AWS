@@ -45,6 +45,7 @@ export const refund_action = (type, productNum, name, price, created_at, toLogin
     //
     const { access_token, refresh_token } = sessionStorage;
     const { userNum } = getState().user_reducer;
+    console.log(userNum);
     const _refund_action = await axios({
       //
       method: "post",
