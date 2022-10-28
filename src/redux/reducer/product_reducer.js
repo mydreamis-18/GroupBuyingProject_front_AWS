@@ -3,7 +3,7 @@ const init = {
   isProductDataReady: false,
   products: new Array(0),
   isLoadingPage: true,
-  isDefaultImg: true,
+  isDefaultImg: false,
   productsLength: 0,
   productsIdx: 0,
   temp: "temp",
