@@ -59,7 +59,7 @@ const InputProduct = (props) => {
       //
       if (!isDefaultImg) {
         //
-        setImg("http://3.34.144.225" + product.img_path);
+        setImg("http://3.34.144.225" + decodeURI(product.img_path));
       }
     }
   }, [products]);
