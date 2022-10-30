@@ -15,6 +15,7 @@ export const getAllProducts_action = () => {
     //
     // if (products.length === 0) return;
     //
+    console.log(products)
     await _dispatch({ type: "GET_ALL_PRODUCTS", payload: products });
     // console.log("2");
     //

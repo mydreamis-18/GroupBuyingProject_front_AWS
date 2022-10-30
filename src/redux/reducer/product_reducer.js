@@ -3,7 +3,7 @@ const init = {
   isProductDataReady: false,
   products: new Array(0),
   isLoadingPage: true,
-  isDefaultImg: false,
+  isDefaultImg: true,
   productsLength: 0,
   productsIdx: 0,
   temp: "temp",
@@ -27,7 +27,7 @@ function reducer(state = init, action) {
     ////////////////////////
     case "GET_ALL_PRODUCTS":
       // console.log("1");
-      console.log("GET_ALL_PRODUCTS", products);
+      console.log("GET_ALL_PRODUCTS", payload);
       return { ...state, products: payload, productsLength: payload.length, isProductDataReady: true };
     //
     ///////////////////
